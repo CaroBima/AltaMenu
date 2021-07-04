@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Alta de Menú</title>
+  </head>
+
+  <body>
+    <h1>Alta de Menú</h1>
+
+    <!-- Inicio del formulario-->
+    <form class="" action="index.html" method="post">
+
+      <!-- para el ingreso del codigo de menú -->
+      <label for="inCodMenu">Código de menú: </label>
+      <input type="text" name="inCodMenu" value="">
+      <br><br>
+
+      <!-- Para el ingreso del nombre del menú -->
+      <label for="txtNomMenu">Nombre del menú: </label>
+      <input type="text" name="txtNomMenu" value="">
+      <br><br>
+      <label for="selectCeliaco">Apto para celíacos: </label>
+
+      <!-- Combobox para seleccionar si es apto para celíacos o no -->
+      <select name="selectCeliaco">
+        <option value="valor1" selected>-</option>
+        <option value="valor2">Sí</option>
+        <option value="valor3">No</option>
+      </select>
+      <br><br>
+
+      <!-- Combobox para seleccionar si es apto para  vegetarianos o no  -->
+      <label for="selectVeget">Apto para vegetarianos: </label>
+      <select name="selectVeget">
+        <option value="valor1" selected>-</option>
+        <option value="valor2">Sí</option>
+        <option value="valor3">No</option>
+      </select>
+      <br><br>
+
+      <!-- Label para el ingreso del precio-->
+      <label for="txtPrecio">Precio: </label>
+      <input type="text" name="txtPrecio" value="">
+      <br><br>
+
+      <!-- Text area para ingresar la descripción del producto-->
+      <label for="txtDescripcion">Descripción: </label>
+      <textarea name="name" rows="8" cols="80"></textarea>
+      <br><br>
+    </form>
+
+  </body>
+</html>
