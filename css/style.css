@@ -27,6 +27,11 @@ h1 {
   text-align: center;
 }
 
+p.centrado {
+  float: center;
+  text-align: center;
+}
+
 .abs-center {
   display: flex;
   align-items: center;
