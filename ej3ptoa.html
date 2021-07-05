@@ -20,6 +20,12 @@ TENER EN CUENTA: cuando se asigna un dato ingresado por prompt a una variable, e
    <body>
 
         <form class="" action="index.html" method="post">
+          <p class="centrado">
+              <h1>Dora, la calculadora</h1>
+              <br><br><br>
+          </p>
+
+
           <p class="formulariocompleto">
              <img src="images/suma.png"  width="200" align= "right" alt="mozoconplato">
           </p>
@@ -54,22 +60,17 @@ TENER EN CUENTA: cuando se asigna un dato ingresado por prompt a una variable, e
         </form>
 
 <script type="text/javascript">
-  var valor1 = document.getElementById("numero1").value;
-  var valor2 = document.getElementById("numero2").value;
-  var resul = funcionSuma(valor1, valor2);
-  document.getElementById("resultado").value = resul;
 
-  function funcionSuma(valor1, valor2){
-    var val1 = parseInt(valor1);
-    var val2 = parseInt(valor2);
-    var res = val1 + val2;
-    console.log(valor1);
-    console.log(valor2);
+  function funcionSuma(numero1, numero2){
+    let valor1 = document.getElementById("numero1").value;
+    let valor2 = document.getElementById("numero2").value;
+    let val1 = parseInt(valor1);
+    let val2 = parseInt(valor2);
+    let res = val1 + val2;
     console.log(val1);
     console.log(val2);
     console.log(res);
-
-    return res;
+    document.getElementById("resultado").value = res;
   }
 
 </script>
