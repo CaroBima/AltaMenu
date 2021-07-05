@@ -14,17 +14,14 @@ TENER EN CUENTA: cuando se asigna un dato ingresado por prompt a una variable, e
      <link rel="stylesheet" href="css/style.css">
      <script src="js/operacion.js"></script>
      <title>Ejercicio 3: Javascript</title>
-
   </head>
 
    <body>
-
         <form class="" action="index.html" method="post">
           <p class="centrado">
               <h1>Dora, la calculadora</h1>
               <br><br><br>
           </p>
-
 
           <p class="formulariocompleto">
              <img src="images/suma.png"  width="200" align= "right" alt="mozoconplato">
@@ -45,6 +42,7 @@ TENER EN CUENTA: cuando se asigna un dato ingresado por prompt a una variable, e
              </p>
             </div>
            <br><br>
+
            <div class="form-group">
              <p id="resul">
                <label for="resultado">Resultado: </label>
@@ -52,29 +50,11 @@ TENER EN CUENTA: cuando se asigna un dato ingresado por prompt a una variable, e
             </p>
             </div>
            <br><br>
+
            <div class="form-group">
            <input type="button" name="calcular" value="Calcular" onclick="funcionSuma(numero1, numero2);">
            </div>
             <br><br>
-
         </form>
-
-<script type="text/javascript">
-
-  function funcionSuma(numero1, numero2){
-    let valor1 = document.getElementById("numero1").value;
-    let valor2 = document.getElementById("numero2").value;
-    let val1 = parseInt(valor1);
-    let val2 = parseInt(valor2);
-    let res = val1 + val2;
-    console.log(val1);
-    console.log(val2);
-    console.log(res);
-    document.getElementById("resultado").value = res;
-  }
-
-</script>
-
-
    </body>
  </html>
