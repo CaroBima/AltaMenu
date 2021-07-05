@@ -1,0 +1,79 @@
+<!--Ejercicio Nº 3: Javascript
+a. Realizar una aplicación que permita el ingreso mediante dos ventanas “prompt” de dos números para
+realizar una suma. Almacenar estos números en dos variables, realizar la correspondiente suma y mostrar
+el resultado tanto por consola como una ventana alert.
+TENER EN CUENTA: cuando se asigna un dato ingresado por prompt a una variable, este está como un “String”.
+ Utilizar los métodos de casteo/parseo de Javascript correspondientes (parseInt o parseFloat) para convertir
+ los números ingresados en tipo entero o flotante (double).-->
+
+ <!DOCTYPE html>
+ <html lang="es" dir="ltr">
+
+   <head>
+     <meta charset="utf-8">
+     <link rel="stylesheet" href="css/style.css">
+     <script src="js/operacion.js"></script>
+     <title>Ejercicio 3: Javascript</title>
+
+  </head>
+
+   <body>
+
+        <form class="" action="index.html" method="post">
+          <p class="formulariocompleto">
+             <img src="images/suma.png"  width="200" align= "right" alt="mozoconplato">
+          </p>
+
+             <div class="form-group">
+               <p id="num1" >
+                 <label for="numero1">Primer número: </label>
+                 <input type="text" name="numero1" id="numero1" value="0">
+               </p>
+             </div>
+           <br><br>
+
+           <div class="form-group">
+             <p id="num2">
+               <label for="numero2">Segundo número: </label>
+               <input type="text" name="numero2" id="numero2" value="0">
+             </p>
+            </div>
+           <br><br>
+           <div class="form-group">
+             <p id="resul">
+               <label for="resultado">Resultado: </label>
+               <input type="text" name="resultado" id="resultado" value="0">
+            </p>
+            </div>
+           <br><br>
+           <div class="form-group">
+           <input type="button" name="calcular" value="Calcular" onclick="funcionSuma(numero1, numero2);">
+           </div>
+            <br><br>
+
+        </form>
+
+<script type="text/javascript">
+  var valor1 = document.getElementById("numero1").value;
+  var valor2 = document.getElementById("numero2").value;
+  var resul = funcionSuma(valor1, valor2);
+  document.getElementById("resultado").value = resul;
+
+  function funcionSuma(valor1, valor2){
+    var val1 = parseInt(valor1);
+    var val2 = parseInt(valor2);
+    var res = val1 + val2;
+    console.log(valor1);
+    console.log(valor2);
+    console.log(val1);
+    console.log(val2);
+    console.log(res);
+
+    return res;
+  }
+
+</script>
+
+
+   </body>
+ </html>

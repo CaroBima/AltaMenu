@@ -49,7 +49,7 @@ p.centrado {
 *{box-sizing:border-box;}
 
 form{
-	width:700px;
+  width:700px;
 	padding:16px;
 	border-radius:10px;
 	margin:auto;
@@ -92,6 +92,7 @@ form input[type="submit"]:hover{
 
 form input[type="button"]{
   float: right;
+  font-size: 17px;
   /*border:1px solid #000;
   border-radius:5px;
   color:#000;
