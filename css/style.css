@@ -23,14 +23,17 @@ body{
 
 }
 
+/* alineacion del título h1*/
 h1 {
   text-align: center;
 }
 
+/* centrado de la imagen del titulo de menu */
 p.centrado {
   float: center;
   text-align: center;
 }
+
 
 .abs-center {
   display: flex;
@@ -46,7 +49,7 @@ p.centrado {
 *{box-sizing:border-box;}
 
 form{
-	width:600px;
+	width:700px;
 	padding:16px;
 	border-radius:10px;
 	margin:auto;
