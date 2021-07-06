@@ -4,8 +4,14 @@ function funcionSuma(numero1, numero2){
   let val1 = parseInt(valor1);
   let val2 = parseInt(valor2);
   let res = val1 + val2;
-  console.log(val1);
-  console.log(val2);
-  console.log(res);
-  document.getElementById("resultado").value = res;
+
+  //verifico si el valor es un numero. Si lo es los sumo, si no muestro un
+  //aviso de que solo se pueden sumar números
+  if (!isNaN(res)){
+    document.getElementById("resultado").value = res;
+  }else{
+
+    document.getElementById("resultado").value = 'Solo se sumar números';
+  }
+
 }
