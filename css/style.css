@@ -111,3 +111,12 @@ textarea{
 	resize:none;
 	display:block;
 }
+
+#enunciado{
+  width:700px;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+  background-color:#f0b966;
+	/*background-color:#ccc;*/
+}
