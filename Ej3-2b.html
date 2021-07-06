@@ -37,8 +37,14 @@
         //}
 
         //Punto b:
-        
-
+        let ingreso;
+        ingreso = prompt('Ingrese equipo:', );
+        let contador = 0;
+        while( ingreso != 'terminado'){
+          contador ++;
+          ingreso = prompt('Ingrese equipo:', );
+        }
+        alert('Se ingresaron ' + contador + ' equipos');
       </script>
 
   </body>
